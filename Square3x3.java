@@ -1,9 +1,10 @@
 
 /**
- * Write a description of class Square3x3 here.
+ * This class represent 3x3 table.
+ * in each table a number between 1 to 9.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Tomer Eliel
+ * @version 208114652
  */
 public class Square3x3
 {
@@ -11,6 +12,11 @@ public class Square3x3
     // instance variables - replace the example below with your own
     private int[][] _board;
     
+    /**
+     * Constructoy for object of class Square3x3.
+     * Constructs a new board w/ defualt size and values (-1).
+     * 
+     */
     public Square3x3()
     {
         _board = new int[BOARD_SIZE][BOARD_SIZE];
@@ -22,7 +28,13 @@ public class Square3x3
             }
         }
     }
-    
+        /**
+     * Constructoy for object of class Square3x3.
+     * Constructs a new board w/ defualt size and copies values from given array.
+     * 
+     * @param array - 2D array from type int with values
+     * 
+     */ 
     public Square3x3(int[][]array)
     {
         _board = new int[BOARD_SIZE][BOARD_SIZE];
@@ -45,6 +57,13 @@ public class Square3x3
         }
     }
     
+            /**
+     * Copy Constructor for object of class Square3x3.
+     * Constructs a new board w/ defualt size and initializes values of another Squere3x3 object.
+     * 
+     * @param other - Squere3x3 type object
+     * 
+     */ 
     public Square3x3(Square3x3 other)
     {
         _board = new int[BOARD_SIZE][BOARD_SIZE];
